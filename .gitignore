@@ -17,5 +17,6 @@
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
 
-dist/
 node_modules/
+dist/**
+!dist/index.html
