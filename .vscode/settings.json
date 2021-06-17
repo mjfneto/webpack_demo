@@ -7,5 +7,8 @@
     ".vscode",
     ".vscode-insiders",
     "./dist/**"
+  ],
+  "cSpell.ignoreWords": [
+    "viaoda"
   ]
 }
