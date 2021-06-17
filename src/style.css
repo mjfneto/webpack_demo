@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Viaoda Libre";
+  src: url("./ViaodaLibre-Regular.ttf");
+}
+
+.hello {
+  font-family: "Viaoda Libre", cursive;
+  color: red;
+  background: url("./icon.png") center/cover no-repeat;
+}
+
+img {
+  max-width: 60px;
+}
