@@ -2,25 +2,20 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "production",
+  mode: "development",
   entry: {
-    index: {
-      import: "./src/index.js",
-      dependOn: "shared",
-    },
-    print: {
-      import: "./src/print.js",
-      dependOn: "shared",
-    },
-    shared: "lodash",
-  },
-  optimization: {
-    runtimeChunk: "single",
+    index: "./src/index.js",
+    print: "./src/print.js",
   },
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
+  },
+  optimization: {
+    splitChunks: {
+      chunks: "all",
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
